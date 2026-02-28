@@ -1,0 +1,29 @@
+{
+  "page_size": 2,
+  "relations": {
+    "Student": {
+      "schema": ["sid", "major"],
+      "pages": [
+        [[1, "CS"], [2, "Math"]],
+        [[3, "CS"], [4, "EE"]],
+        [[5, "History"], [6, "CS"]],
+        [[7, "Bio"], [8, "CS"]],
+        [[9, "Physics"], [10, "CS"]],
+        [[11, "Art"], [12, "CS"]]
+      ]
+    },
+    "Enroll": {
+      "schema": ["sid", "course"],
+      "pages": [
+        [[1, "DB"], [1, "AI"]],
+        [[2, "Calc"], [3, "DB"]],
+        [[3, "OS"], [4, "Circuits"]],
+        [[6, "AI"], [6, "DB"]],
+        [[8, "DB"], [8, "ML"]],
+        [[9, "Quantum"], [10, "OS"]],
+        [[10, "DB"], [12, "AI"]],
+        [[12, "Compilers"], [11, "Painting"]]
+      ]
+    }
+  }
+}
